@@ -55,7 +55,7 @@ services:
       placement:
         constraints:
          # Hostname of the manager node!
-         - node.hostname == manager-001
+         - node.hostname == node1
     networks:
       - backend
 
@@ -75,7 +75,7 @@ services:
       placement:
         constraints:
          # Hostname of the first woker node!
-         - node.hostname == worker-001
+         - node.hostname == node2
     networks:
       - backend
   ################################################################
