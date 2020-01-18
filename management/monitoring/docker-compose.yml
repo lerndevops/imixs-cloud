@@ -16,7 +16,7 @@ services:
   prometheus:
     image: prom/prometheus
     volumes:
-      - $PWD/management/monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+      - $PWD/prometheus.yml:/etc/prometheus/prometheus.yml
     ports:
       - "9090:9090"
     deploy:
